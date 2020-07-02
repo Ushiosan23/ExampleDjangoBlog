@@ -1,0 +1,23 @@
+{% load static %}
+
+{# header #}
+<header class="header" id="page_menu">
+	{# logo #}
+	<a href="{% url 'page_index' %}" class="logo">
+		<img src="{% static 'img/logo.svg' %}" alt="logo" class="logo_img">
+	</a>
+	{# navigation #}
+	<nav class="nav">
+		{# menu container #}
+		<ul class="menu">
+			{# menu items #}
+			{% for item, item_url in menu.items %}
+				{% if request.path == item_url %}
+					<li class="item" data-active><a href="{{ item_url }}">{{ item }}</a></li>
+				{% else %}
+					<li class="item"><a href="{{ item_url }}">{{ item }}</a></li>
+				{% endif %}
+			{% endfor %}
+		</ul>
+	</nav>
+</header>

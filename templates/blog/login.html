@@ -1,0 +1,30 @@
+{% extends 'blog/login/index.html' %}
+{% load static %}
+
+{# sub title #}
+{% block sub_title %}| Login{% endblock %}
+
+{# container #}
+{% block container %}
+	<form action="{% url 'blog_login' %}" class="form login" method="post">
+		{# title #}
+		<div class="title">
+			<h1 class="text">Welcome</h1>
+		</div>
+		{# logo #}
+		<div class="logo">
+			<img src="{% static 'img/favicon.svg' %}" alt="logo" class="img">
+		</div>
+		{# token #}
+		{% csrf_token %}
+		{# inputs #}
+		{{ form.as_p }}
+		{# submit #}
+		<input type="submit" class="btn login" value="Login">
+		{# extra options #}
+		<ul class="extra">
+			<li>Forgot <a href="#">Username</a>/<a href="#">Password</a></li>
+			<li>Don't have an account? <a href="{% url 'blog_sign_up' %}">Sing up</a></li>
+		</ul>
+	</form>
+{% endblock %}

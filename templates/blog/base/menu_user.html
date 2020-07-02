@@ -1,0 +1,11 @@
+{% load static %}
+
+<div class="user" id="user-top">
+	{% if 'image' in user.config %}
+		<a href="#user-top" class="menu-user">
+			<img src="{% static 'img/page/3.png' %}" alt="">
+		</a>
+	{% else %}
+		<a href="#user-top" class="icon-user menu-user"></a>
+	{% endif %}
+</div>

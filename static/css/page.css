@@ -1,0 +1,234 @@
+/* header styles */
+.header {
+	background: var(--header-background);;
+	display: flex;
+	width: 100%;
+	position: relative;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	justify-items: center;
+	align-content: center;
+	padding: 50px 25px;
+	box-shadow: 0 0 0 transparent;
+	transition: all .3s ease;
+}
+
+.header[data-sticky] {
+	box-shadow: 0 1px 10px var(--shadow-background);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	padding: 10px 25px;
+}
+
+/* logo styles */
+.header .logo {
+	width: 25%;
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+}
+
+.header .logo .logo_img {
+	max-height: 45px;
+}
+
+/* navigation styles */
+.header .nav {
+	display: flex;
+	width: 75%;
+	justify-content: flex-end;
+}
+
+.header .nav .menu {
+	position: relative;
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
+	align-items: center;
+	align-content: center;
+	list-style: none;
+}
+
+.header .nav .menu .item {
+	position: relative;
+}
+
+.header .nav .menu .item a {
+	position: relative;
+	padding: 1em 1.5em;
+	text-decoration: none;
+	color: var(--text-color);
+	font-weight: bold;
+}
+
+.header .nav .menu .item a:before {
+	content: "";
+	background: var(--accent-color);
+	display: inline-block;
+	position: absolute;
+	top: calc(100% + 8px);
+	left: 0;
+	width: 100%;
+	height: 0;
+	transition: all .2s ease;
+}
+
+.header .nav .menu .item:hover > a::before,
+.header .nav .menu .item[data-active] > a::before {
+	content: "";
+	top: 100%;
+	height: 8px;
+}
+
+/* cards style */
+.card {
+	display: flex;
+	padding: 1em 4em;
+	position: relative;
+	max-width: 100%;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin-top: 2em;
+}
+
+.card:first-child {
+	margin-top: 3em;
+}
+
+.card .card_text {
+	position: relative;
+	width: 100%;
+	text-align: justify;
+}
+
+.card .card_text .info {
+	line-height: 1.6;
+}
+
+.card .card_text .card_title {
+	display: inline-block;
+	font-size: 24pt;
+	font-weight: bold;
+	position: relative;
+	width: 100%;
+	color: var(--text-color);
+	margin: 0 0 0.5em 0;
+}
+
+.card.photo_card {
+	align-items: center;
+	align-content: center;
+}
+
+.card.photo_card[data-flip] {
+	flex-flow: row-reverse wrap;
+}
+
+.card.photo_card .card_text {
+	width: 50%;
+	
+}
+
+.card.photo_card .card_img_container {
+	display: flex;
+	position: relative;
+	width: 50%;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.card.photo_card .card_img_container .card_img {
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	width: 60%;
+	border-radius: 5px;
+	box-shadow: 25px 4px 10px 10px var(--shadow-cards);
+}
+
+.card.photo_card[data-flip] .card_img_container .card_img {
+	box-shadow: -25px 4px 10px 10px var(--shadow-cards);
+}
+
+.card.photo_card .card_img_container .card_img img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.card.photo_card .card_img_container .card_img.round {
+	border-radius: 100%;
+}
+
+/* contact */
+.contact_container {
+	position: relative;
+	width: 100%;
+	padding: 5em 10em;
+}
+
+.contact_container .section_info {
+	position: relative;
+	display: flex;
+	width: 100%;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	padding: 0 0 3em;
+	border-bottom: solid 2px var(--shadow-background);
+}
+
+.contact_container .section_info .contact {
+	position: relative;
+	max-width: calc(100% / 3);
+}
+
+.contact_container .section_info .contact .title {
+	position: relative;
+	font-weight: bold;
+	padding: 0.5em 0;
+}
+
+.contact_container .section_info .contact div {
+	padding: 0.3em 0;
+	text-align: justify;
+}
+
+.contact_container .section_info .contact .email {
+	position: relative;
+	text-decoration: underline;
+	cursor: pointer;
+	color: var(--text-color);
+}
+
+.contact_container .section_info .contact .tel {
+	position: relative;
+	display: flex;
+	font-size: 12pt;
+	align-items: center;
+}
+
+.contact_container .section_info .contact .tel i {
+	padding: 0 0.5em 0 0;
+	font-size: 16pt;
+	color: var(--accent-color);
+}
+
+/* contact maps */
+.contact_container .section_map {
+	position: relative;
+	width: 100%;
+	padding: 3em 0 0 0;
+}
+
+.contact_container .section_map .map {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 70vh;
+	border: none;
+}

@@ -1,0 +1,45 @@
+/* buttons */
+.btn {
+	display: inline-block;
+	position: relative;
+	padding: 1em 2.5em;
+	text-decoration: none;
+	border: none;
+	cursor: pointer;
+}
+
+.btn.action {
+	background: var(--accent-color);
+	color: var(--text-contrast);
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.btn.action.back {
+	background: transparent;
+	padding: 0.5em;
+	font-size: 16pt;
+}
+
+.btn.action.back:hover {
+	background: var(--shadow-cards);
+}
+
+.btn.login {
+	padding: 0.7em 2.5em;
+	width: 100%;
+	text-transform: uppercase;
+	border-radius: 4px;
+	font-weight: bold;
+	background: var(--body-background);
+	transition: all .2s ease;
+}
+
+.btn.login:hover {
+	background: var(--body-background-dark);
+	box-shadow: 0.3em 0.3em 6px var(--shadow-background);
+}
+
+.btn.login:active {
+	box-shadow: 0 0 0 transparent;
+}

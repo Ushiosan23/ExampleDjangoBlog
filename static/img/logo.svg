@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="740"
+   height="650"
+   viewBox="0 0 195.79166 171.97917"
+   version="1.1"
+   id="svg8"
+   inkscape:export-filename="D:\Developer\Experiments\Python\DJango\ExampleBlog\static\img\logo.png"
+   inkscape:export-xdpi="129.7299"
+   inkscape:export-ydpi="129.7299"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="django_blog.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="565.4413"
+     inkscape:cy="216.49609"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer3"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     units="px"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="715"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Lines"
+     style="display:inline" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Django icon"
+     style="display:inline">
+    <g
+       transform="matrix(0.98043972,0,0,0.97683036,1.9157274,1.9913628)"
+       id="g844">
+      <path
+         d="M 14.977877,1.9727169 C 7.7780008,1.9727143 1.9814217,7.7690774 1.9814217,14.968685 V 118.11707 h -0.00873 v 51.88987 L 28.222982,136.41304 H 180.82266 c 7.19988,0 12.99594,-5.79585 12.99594,-12.99546 V 14.968685 c 0,-7.1996076 -5.79606,-12.9959681 -12.99594,-12.9959681 z"
+         style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#092e20;stroke-width:7.9375;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:11.7;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+         id="rect11" />
+      <g
+         transform="matrix(0.99413687,0,0,0.99409982,-27.118552,-66.293885)"
+         id="g1825">
+        <path
+           id="path1789"
+           style="fill:#092e20;fill-opacity:1;stroke:none;stroke-width:0.999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="M 510.39844,356.4707 457.01172,357 l -0.70703,82.02539 c -47.91296,-10.17173 -80.35889,9.80297 -94.97266,26.95703 -28.40706,34.02059 -23.26513,91.47254 -4.5957,114.90625 34.06041,45.7076 108.84413,31.79804 154.32617,24.73633 z m -69.45899,123.875 c 7.0521,0.009 12.93084,1.18886 15.67383,2.25391 l 0.70899,85.56055 c -14.79024,2.02643 -61.39328,7.01273 -60.63477,-43.48633 0.55167,-36.72843 26.22993,-44.35182 44.25195,-44.32813 z"
+           transform="scale(0.26458333)" />
+        <path
+           id="rect1795"
+           style="fill:#092e20;fill-opacity:1;stroke:none;stroke-width:1.02265;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:11.7;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+           d="m 542.71484,357.80664 v 55.48633 h 54.24805 v -55.48633 z m -0.1875,82.36719 0.17774,124.62695 c -0.99689,17.72115 -0.4562,34.85081 -7.24805,54.80078 -11.3009,27.14041 -28.67657,32.74825 -44.90234,42.42774 l 49.32031,24.39453 c 32.04718,-13.74864 56.71369,-39.76576 56.92383,-106.41992 l -0.35352,-139.83008 z"
+           transform="scale(0.26458333)" />
+      </g>
+    </g>
+  </g>
+</svg>

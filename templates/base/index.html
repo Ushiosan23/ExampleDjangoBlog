@@ -1,0 +1,31 @@
+{% load static %}
+{% spaceless %}
+	<!doctype html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>{% block title %}{% endblock %}</title>
+		{# favicon #}
+		<link rel="shortcut icon" href="{% static 'img/favicon.svg' %}" type="image/x-icon">
+		{# css #}
+		<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+		<link rel="stylesheet" href="{% static 'css/inputs.css' %}">
+		<link rel="stylesheet" href="{% static 'css/fonts.css' %}">
+		{% block extra_css %}{% endblock %}
+		{# js #}
+		<script type="text/javascript" src="{% static 'js/dom/dom.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/plugins/StickyMenu.js' %}"></script>
+		{% block extra_js %}{% endblock %}
+	</head>
+	<body>
+	{# body content #}
+	{% block body %}{% endblock %}
+	{# footer css #}
+	{% block footer_css %}{% endblock %}
+	{# footer js #}
+	{% block footer_js %}{% endblock %}
+	</body>
+	</html>
+{% endspaceless %}

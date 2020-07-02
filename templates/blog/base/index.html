@@ -1,0 +1,22 @@
+{% extends 'base/index.html' %}
+{% load static %}
+
+{# page title #}
+{% block title %}{{ config.title }} Blog {% block sub_title %}{% endblock %}{% endblock %}
+
+{# page styles #}
+{% block extra_css %}
+	<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+{% endblock %}
+
+{# page body #}
+{% block body %}
+	{# menu #}
+	{% include 'blog/base/menu.html' %}
+	{# page content #}
+	<div class="container">
+		{% block container %}{% endblock %}
+	</div>
+	{# page footer #}
+	{% include 'blog/base/footer.html' %}
+{% endblock %}

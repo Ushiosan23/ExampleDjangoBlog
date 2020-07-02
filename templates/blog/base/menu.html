@@ -1,0 +1,28 @@
+{% load static %}
+
+{# header section #}
+<header class="header">
+	{# logo section #}
+	<section class="section section_logo">
+		{# logo #}
+		<img src="{% static 'img/logo.svg' %}" alt="logo" class="logo">
+	</section>
+	{# menu section #}
+	<nav class="section menu">
+		{# menu #}
+		<ul class="menu">
+			{% for item, url in menu.items %}
+				<li class="item"><a href="{{ url }}">{{ item }}</a></li>
+			{% endfor %}
+			{# check session #}
+			{% if 'login' not in request.session %}
+				<li class="item"><a href="{% url 'blog_login' %}">Log in</a></li>
+				<li class="item"><a href="{% url 'blog_sign_up' %}">Sign up</a></li>
+			{% endif %}
+		</ul>
+		{# menu user #}
+		{% if 'login' in request.session %}
+			{% include 'blog/base/menu_user.html' %}
+		{% endif %}
+	</nav>
+</header>

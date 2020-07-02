@@ -1,0 +1,25 @@
+{% extends 'blog/login/index.html' %}
+{% load static %}
+
+{# sub title #}
+{% block sub_title %}| Sign Up{% endblock %}
+
+{# container #}
+{% block container %}
+	<form action="{% url 'blog_sign_up' %}" class="form login" method="post">
+		{# title #}
+		<div class="title">
+			<h1 class="text">Sign Up</h1>
+		</div>
+		{# token #}
+		{% csrf_token %}
+		{# inputs #}
+		{{ form.as_p }}
+		{# submit #}
+		<input type="submit" class="btn login" value="Register">
+		{# extra #}
+		<ul class="extra">
+			<li><a href="{% url 'blog_login' %}">I have an account</a></li>
+		</ul>
+	</form>
+{% endblock %}

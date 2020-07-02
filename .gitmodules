@@ -1,0 +1,3 @@
+[submodule ".\\static\\js\\dom"]
+	path = .\\static\\js\\dom
+	url = https://github.com/Ushiosan23/JavascriptDomLib.git

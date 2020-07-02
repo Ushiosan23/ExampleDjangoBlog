@@ -1,0 +1,21 @@
+{% load static %}
+{# footer node #}
+<footer class="footer">
+	{# left #}
+	<section class="side">
+		{% include 'page/base/copyright.html' %}
+	</section>
+	{# center #}
+	<section class="side" data-center>
+		{% include 'page/base/footer_logo.html' %}
+	</section>
+	{# right #}
+	<section class="side">
+		{% include 'page/base/social_networks.html' %}
+	</section>
+</footer>
+{# foother js #}
+{% block footer_js %}
+	<script type="text/javascript" src="{% static 'js/page_sticky_menu.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/page_cards_config.js' %}"></script>
+{% endblock %}

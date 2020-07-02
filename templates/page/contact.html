@@ -1,0 +1,35 @@
+{% extends 'page/base/index.html' %}
+
+{# set subtitle #}
+{% block sub_title %}| Contact{% endblock %}
+
+{# create container #}
+{% block container %}
+	<div class="contact_container">
+		{# section info #}
+		<div class="section_info">
+			{# iterate all contacts #}
+			{% for contact in config.contacts %}
+				{% if contact.type == "contact" %}
+					<div class="contact">
+						<div class="title">{{ contact.title }}</div>
+						<a href="mailto://{{ contact.email }}" class="email">{{ contact.email }}</a>
+						<div class="tel"><i class="icon-old-phone"></i>{{ contact.tel }}</div>
+					</div>
+				{% elif contact.type == "action" %}
+					<div class="contact action">
+						<div class="title">{{ contact.title }}</div>
+						<div class="info">{{ contact.info }}</div>
+						<a href="{{ contact.link }}" class="btn action">{{ contact.text }}</a>
+					</div>
+				{% endif %}
+			{% empty %}
+				<div class="alert title">Add your contact info.</div>
+			{% endfor %}
+		</div>
+		{# section maps #}
+		<div class="section_map">
+			<iframe src="{{ config.maps }}" class="map"></iframe>
+		</div>
+	</div>
+{% endblock %}
